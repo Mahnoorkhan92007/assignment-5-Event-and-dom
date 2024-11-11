@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+
+<body>
+
+
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render">First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+    <h1>Link Alert</h1>
+    <a href="#" onclick="clickable()">Submit</a>
+    <h1>Mobile phone lookups</h1>
+    <div onclick="myclick()" style="margin-top: 50px;">
+        <img style="margin-left:40px;" src="assets/1.jpg" alt="1image">
+        <img style="margin-left:40px;" src="assets/2.jpg" alt="2image">
+        <img style="margin-left:40px;" src="assets/3.jpg" alt="3image">
+        <img style="margin-left: 40px;" src="assets/4.jpg" alt="4image">
+    </div>
+
+
+    <table>
+
+        <h1>Students Record</h1>
+        <tr>
+            <th>Index</th>
+            <th>Students</th>
+            <th>Class</th>
+
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Asad</td>
+            <td>14</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Ali</td>
+            <td>5</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Eshaal</td>
+            <td>8</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Areeba</td>
+            <td>11</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Mahnoor</td>
+            <td>12</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Marium</td>
+            <td>13</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Fatima</td>
+            <td>14</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Fariha</td>
+            <td>14</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Afsheen</td>
+            <td>12</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Sheraz</td>
+            <td>16</td>
+            <td><button onclick="mytablefunction(this)">delete</button></td>
+
+        </tr>
+
+    </table>
+
+    <h1>Mouseover</h1>
+
+    <img id="image" src="assets/sun.jpg" alt="Image" onmouseover="changeImage()" onmouseout="resetImage()">
+
+
+    <h1 id="counterValue">Counter: </h1>
+
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrease</button>
+
+
+
+
+    <h1>Sign Up</h1>
+    <form id="signup-form">
+        <label for="first-name">First Name:</label><br>
+        <input type="text" id="first-name" required>
+        <br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" required>
+        <br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" required>
+        <br>
+
+        <input type="submit" value="Submit">
+        <br>
+
+    </form>
+
+    <h3>Submitted Data:</h3>
+    <div id="displayData"></div>
+    <h1>Read More Option</h1>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+        inventore soluta necessitatibus blanditiis in sunt,<span id="span" style="display:none;"> obcaecati voluptas ut
+            qui at saepe nostrum
+            quaerat quod aspernatur placeat dignissimos officia earum! Impedit?</span>
+        <button onclick="readmore()">Read More</button>
+    </p>
+
+
+
+    <h1>Updating Events</h1>
+    <form id="studentForm">
+        <p>Name:</p>
+        <input type="text" id="name" required><br>
+
+        <p>Roll No:</p>
+        <input style="margin-bottom: 10px;" type="number" id="rollNo" required><br>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <script src="switch.js"></script>
+
+    <script src="event.js"></script>
+    <script src="events.js"></script>
+
+    <script src="dom.js"></script>
+</body>
+
+</html>
